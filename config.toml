@@ -1,4 +1,0 @@
-baseurl = "http://macwebdev.ca/"
-languageCode = "en-ca"
-title = "Fundamentals"
-theme = "mcpt-fundamentals-hugo-theme"
