@@ -1,3 +1,4 @@
 baseurl = "http://www.macwebdev.ca"
 title = "Fundamentals"
+theme = "mcpt-fundamentals-hugo-theme"
 languageCode = "en-us"
