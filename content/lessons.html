@@ -1,0 +1,11 @@
++++
+title = "Lessons"
++++
+
+        <div id = "lessons" class = "container">
+            <ul class="large-list">
+                {{range .lesson}}
+                <li><a href = "{{ $baseurl}}/lesson/{{. | urlize}}"><{{ . }} </a> ><li>
+                {{end}}
+            </ul>
+        </div>
