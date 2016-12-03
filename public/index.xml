@@ -2,35 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fundamentals</title>
-    <link>http://www.macwebdev.ca/index.xml</link>
+    <link>http://macwebdev.ca/index.xml</link>
     <description>Recent content on Fundamentals</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Nov 2016 21:30:33 -0500</lastBuildDate>
-    <atom:link href="http://www.macwebdev.ca/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://macwebdev.ca/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>template</title>
-      <link>http://www.macwebdev.ca/lesson/template/</link>
+      <title>Template</title>
+      <link>http://macwebdev.ca/lesson/template/</link>
       <pubDate>Wed, 30 Nov 2016 21:30:33 -0500</pubDate>
       
-      <guid>http://www.macwebdev.ca/lesson/template/</guid>
-      <description></description>
+      <guid>http://macwebdev.ca/lesson/template/</guid>
+      <description>&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;p&gt;This is a sample file to show you how to create a proper lesson page. Here you would explain the topic, and teach them what they would need to know. Feel free to edit this section with subheadings, etc.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-4&#34;&gt;
+            &lt;h3&gt;Turing&lt;/h3&gt;
+            &lt;pre class=&#34;language-java&#34;&gt;
+                &lt;code&gt;Right now this says language is java
+                but we don&#39;t have turing support
+                yet that&#39;s why.&lt;/code&gt;
+            &lt;/pre&gt;
+        &lt;/div&gt;
+        &lt;div class = &#34;col-md-4&#34;&gt;
+            &lt;h3&gt;Python&lt;/h3&gt;
+            &lt;pre class=&#34;language-python&#34;&gt;
+                &lt;code&gt;print: &#34;Hello World!&#34;&lt;/code&gt;
+            &lt;/pre&gt;
+        &lt;/div&gt;
+        &lt;div class = &#34;col-md-4&#34;&gt;
+            &lt;h3&gt;Java&lt;/h3&gt;
+            &lt;pre class=&#34;language-java&#34;&gt;
+                &lt;code&gt;System.out.println(&#34;Hello World!&#34;)&lt;/code&gt;
+            &lt;/pre&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;p&gt;Here you can choose to continue on with the lesson or remove it completely.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Sample&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+        &lt;h2&gt; Sample Problems &lt;/h2&gt;
+            &lt;p&gt; Here is where you show a sample problem, a very simple one. You will then explain how to solve it and redirect them to a more difficult (still simple) problem. &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
       <title>Lessons</title>
-      <link>http://www.macwebdev.ca/lesson/</link>
+      <link>http://macwebdev.ca/lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.macwebdev.ca/lesson/</guid>
+      <guid>http://macwebdev.ca/lesson/</guid>
       <description>&lt;div id = &#34;lessons&#34; class = &#34;container&#34;&gt;
-            &lt;ul class=&#34;large-list&#34;&gt;
-                {{range .lesson}}
-                &lt;li&gt;&lt;a href = &#34;{{ $baseurl}}/lesson/{{. | urlize}}&#34;&gt;&lt;{{ . }} &lt;/a&gt; &gt;&lt;li&gt;
-                {{end}}
-            &lt;/ul&gt;
-        &lt;/div&gt;
+        &lt;ul class=&#34;large-list&#34;&gt;
+            &lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
