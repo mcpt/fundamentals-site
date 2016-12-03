@@ -26,7 +26,7 @@ date = "2016-11-30T21:30:33-05:00"
         <div class = "col-md-4">
             <h3>Python</h3>
             <pre class="language-python">
-                <code>print: "Hello World!"</code>
+                <code>print('Hello World!')</code>
             </pre>
         </div>
         <div class = "col-md-4">
@@ -51,7 +51,7 @@ date = "2016-11-30T21:30:33-05:00"
 <div id = "Sample" class = "container">
     <div class = "row">
         <div class = "col-md-12">
-        <h2> Sample Problems </h2>
+            <h2> Sample Problems </h2>
             <p> Here is where you show a sample problem, a very simple one. You will then explain how to solve it and redirect them to a more difficult (still simple) problem. </p>
         </div>
     </div>
