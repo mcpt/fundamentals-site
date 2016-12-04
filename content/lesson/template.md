@@ -32,7 +32,7 @@ date = "2016-11-30T21:30:33-05:00"
         <div class = "col-md-4">
             <h3>Java</h3>
             <pre class="language-java line-numbers">
-                <code>System.out.println("Hello World!")</code>
+                <code>System.out.println("Hello World!");</code>
             </pre>
         </div>
     </div>
