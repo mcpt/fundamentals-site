@@ -17,7 +17,7 @@ date = "2016-11-30T21:30:33-05:00"
     <div class = "row">
         <div class = "col-md-4">
             <h3>Turing</h3>
-            <pre class="language-java">
+            <pre class="language-java line-numbers">
                 <code>Right now this says language is java
                 but we don't have turing support
                 yet that's why.</code>
@@ -25,13 +25,13 @@ date = "2016-11-30T21:30:33-05:00"
         </div>
         <div class = "col-md-4">
             <h3>Python</h3>
-            <pre class="language-python">
+            <pre class="language-python line-numbers">
                 <code>print('Hello World!')</code>
             </pre>
         </div>
         <div class = "col-md-4">
             <h3>Java</h3>
-            <pre class="language-java">
+            <pre class="language-java line-numbers">
                 <code>System.out.println("Hello World!")</code>
             </pre>
         </div>
