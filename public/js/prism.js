@@ -599,7 +599,7 @@ Prism.languages.insertBefore('java','function', {
 	}
 });
 
-Prism.languages.python= {
+Prism.languages.python = {
 	'triple-quoted-string': {
 		pattern: /"""[\s\S]+?"""|'''[\s\S]+?'''/,
 		alias: 'string'
@@ -626,6 +626,31 @@ Prism.languages.python= {
 	'operator' : /[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]|\b(?:or|and|not)\b/,
 	'punctuation' : /[{}[\];(),.:]/
 };
+
+Prism.languages.turing = {
+	'comment': [
+		{
+			pattern: /(^|[^\\])\/\*[\w\W]*?\*\//,
+			lookbehind: true
+		},
+		{
+			pattern: /(^|[^\\:])#.*/,
+			lookbehind: true
+		}
+	],
+	'string': {
+		pattern: /(["'])(\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+		greedy: true
+	},
+	'keyword': /\b(addressint|all|and|array|asm|assert|begin|bind|bits|body|boolean|break|by|case|char|cheat|checked|class|close|collection|condition|const|decreasing|def|deferred|div|else|elseif|elsif|end|endfor|endif|endloop|enum|exit|export|external|fcn|flexible|for|fork|forward|free|function|get|handler|if|implement|import|in|include|inherit|init|int|int1|int2|int4|invariant|label|loop|mod|module|monitor|nat|nat1|nat2|nat4|new|not|objectclass|of|opaque|open|or|packed|pause|pervasive|pointer|post|pre|priority|proc|procedure|process|put|quit|read|real|real4|real8|record|register|rem|result|return|seek|self|set|shl|shr|signal|skip|string|tag|tell|then|timeout|to|type|unchecked|union|unqualified|var|wait|when|write|xor)\b/,
+	'boolean': /\b(true|false)\b/,
+	'function': /[a-z0-9_]+(?=\()/i,
+	'number': /\b(?:\d+\.?\d*)\b/i,
+	'constant': /\b(black|blue|brightblue|brightcyan|brightgreen|brightmagenta|brightpurple|brightred|brightwhite|brown|brushErrorBase|cdMaxNumColors|cdMaxNumColours|cdMaxNumPages|cdScreenHeight|cdScreenWidth|clLanguageVersion|clMaxNumDirStreams|clMaxNumRunTimeArgs|clMaxNumStreams|clRelease|cmFPU|cmOS|cmProcessor|colorbg|colourbg|colorfg|colourfg|configErrorBase|cyan|darkgray|darkgrey|defFontID|defWinID|dirErrorBase|drawErrorBase|e...|(ErrorNum)|errWinID|excp...|(Exceptions)|fileErrorBase|fontDefaultID|fontErrorBase|fsysErrorBase|generalErrorBase|gray|green|grey|guiErrorBase|joystick1|joystick2|lexErrorBase|magenta|mouseErrorBase|musicErrorBase|ootAttr...|(File)|ootk...|(Keyboard)|penErrorBase|pic...|(Pic)|picXor|placeCenterDisplay|placeCentreWindow|printerErrorBase|purple|red|rgbErrorBase|spriteErrorBase|streamErrorBase|textErrorBase|timeErrorBase|unixSignalToException|viewErrorBase|white|windowErrorBase|yellow)\b/,
+	'operator': /\*\*|\^|#|\*|\/|div|mod|rem|shl|shr|\+|-|xor|<|>|=|<=|>=|not=|in|not|in|not|and|or|=>/,
+	'punctuation': /[{}[\];(),.:]/
+};
+
 
 (function(){
 
@@ -673,12 +698,12 @@ function highlightLines(pre, lines, classes) {
 
 	for (var i=0, range; range = ranges[i++];) {
 		range = range.split('-');
-					
+
 		var start = +range[0],
 		    end = +range[1] || start;
-		
+
 		var line = document.createElement('div');
-		
+
 		line.textContent = Array(end - start + 2).join(' \n');
 		line.className = (classes || '') + ' line-highlight';
 
@@ -705,25 +730,25 @@ function highlightLines(pre, lines, classes) {
 
 function applyHash() {
 	var hash = location.hash.slice(1);
-	
+
 	// Remove pre-existing temporary lines
 	$$('.temporary.line-highlight').forEach(function (line) {
 		line.parentNode.removeChild(line);
 	});
-	
+
 	var range = (hash.match(/\.([\d,-]+)$/) || [,''])[1];
-	
+
 	if (!range || document.getElementById(hash)) {
 		return;
 	}
-	
+
 	var id = hash.slice(0, hash.lastIndexOf('.')),
 	    pre = document.getElementById(id);
-	    
+
 	if (!pre) {
 		return;
 	}
-	
+
 	if (!pre.hasAttribute('data-line')) {
 		pre.setAttribute('data-line', '');
 	}
@@ -738,19 +763,19 @@ var fakeTimer = 0; // Hack to limit the number of times applyHash() runs
 Prism.hooks.add('complete', function(env) {
 	var pre = env.element.parentNode;
 	var lines = pre && pre.getAttribute('data-line');
-	
+
 	if (!pre || !lines || !/pre/i.test(pre.nodeName)) {
 		return;
 	}
-	
+
 	clearTimeout(fakeTimer);
-	
+
 	$$('.line-highlight', pre).forEach(function (line) {
 		line.parentNode.removeChild(line);
 	});
-	
+
 	highlightLines(pre, lines);
-	
+
 	fakeTimer = setTimeout(applyHash, 1);
 });
 
@@ -927,7 +952,7 @@ Prism.hooks.add('before-highlight', function(env) {
 
 		pre.parentNode.insertBefore(div, pre);
 	}
-	
+
 	div2.innerHTML = language;
 });
 

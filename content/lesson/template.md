@@ -17,10 +17,8 @@ date = "2016-11-30T21:30:33-05:00"
     <div class = "row">
         <div class = "col-md-4">
             <h3>Turing</h3>
-            <pre class="language-java line-numbers">
-                <code>Right now this says language is java
-                but we don't have turing support
-                yet that's why.</code>
+            <pre class="language-turing line-numbers">
+                <code>put("Hello World!")</code>
             </pre>
         </div>
         <div class = "col-md-4">
