@@ -66,15 +66,6 @@ print(endTime - startTime) # Output the difference between startTime and endTime
 </div>
 [//]:<> (CODE ENDS HERE)
 [//]:<> (LESSON STARTS HERE)
-<div id = "Description" class = "container">
-	<div class = "row">
-		<div class = "col-md-12">
-			<p>Here you can choose to continue on with the lesson or remove it completely.</p>
-		</div>
-	</div>
-</div>
-[//]:<> (CODE ENDS HERE)
-[//]:<> (LESSON STARTS HERE)
 [//]:<> (SAMPLE STARTS HERE)
 <div id = "Sample" class = "container">
 	<div class = "row">
