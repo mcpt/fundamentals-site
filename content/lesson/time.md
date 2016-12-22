@@ -57,7 +57,7 @@ print(endTime - startTime) # Output the difference between startTime and endTime
 
 
 	endTime = System.currentTimeMillis(); // Set endTime to the number of milliseconds since the start of the universe (1970).
-	System.out.println(endTime - startTime) // Output the difference between startTime and endTime.
+	System.out.println(endTime - startTime); // Output the difference between startTime and endTime.
 
 	long timeNow = System.currentTimeMillis();</code>
 			</pre>
