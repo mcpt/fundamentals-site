@@ -73,13 +73,14 @@ print(endTime - startTime) # Output the difference between startTime and endTime
 		</div>
 	</div>
 </div>
+[//]:<> (CODE ENDS HERE)
 [//]:<> (LESSON STARTS HERE)
 [//]:<> (SAMPLE STARTS HERE)
 <div id = "Sample" class = "container">
 	<div class = "row">
 		<div class = "col-md-12">
-			<h2> Sample Problems </h2>
-			<p> Here is where you show a sample problem, a very simple one. You will then explain how to solve it and redirect them to a more difficult (still simple) problem. </p>
+			<h2> Sample Problem </h2>
+			<p>Write a program that waits five seconds without using delay.</p>
 		</div>
 	</div>
 </div>
