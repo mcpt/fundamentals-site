@@ -605,7 +605,7 @@ Prism.languages.python= {
 		alias: 'string'
 	},
 	'comment': {
-		pattern: /(^|[^\\])#.*/,
+		pattern: /(^|[^\\])%.*/,
 		lookbehind: true
 	},
 	'string': {
