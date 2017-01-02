@@ -18,6 +18,7 @@
       <description>&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
     &lt;div class = &#34;row&#34;&gt;
         &lt;div class = &#34;col-md-12&#34;&gt;
+        &lt;i&gt;Lesson created by [author]&lt;/i&gt;
             &lt;p&gt;This is a sample file to show you how to create a proper lesson page. Here you would explain the topic, and teach them what they would need to know. Feel free to edit this section with subheadings, etc.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -25,23 +26,30 @@
 
 &lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
     &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-4&#34;&gt;
-            &lt;h3&gt;Turing&lt;/h3&gt;
-            &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
-                &lt;code&gt;put(&#34;Hello World!&#34;)&lt;/code&gt;
-            &lt;/pre&gt;
-        &lt;/div&gt;
-        &lt;div class = &#34;col-md-4&#34;&gt;
-            &lt;h3&gt;Python&lt;/h3&gt;
-            &lt;pre class=&#34;language-python line-numbers&#34;&gt;
-                &lt;code&gt;print(&#39;Hello World!&#39;)&lt;/code&gt;
-            &lt;/pre&gt;
-        &lt;/div&gt;
-        &lt;div class = &#34;col-md-4&#34;&gt;
-            &lt;h3&gt;Java&lt;/h3&gt;
-            &lt;pre class=&#34;language-java line-numbers&#34;&gt;
-                &lt;code&gt;System.out.println(&#34;Hello World!&#34;);&lt;/code&gt;
-            &lt;/pre&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&#34;tab-content&#34;&gt;
+                &lt;div id=&#34;turing&#34; class=&#34;tab-pane fade in active&#34;&gt;
+                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
+                        &lt;code&gt;put(&#34;Hello World!&#34;)&lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;python&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
+                        &lt;code&gt;print(&#39;Hello World!&#39;)&lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;java&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
+                        &lt;code&gt;System.out.println(&#34;Hello World!&#34;);&lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -59,6 +67,96 @@
         &lt;div class = &#34;col-md-12&#34;&gt;
             &lt;h2&gt; Sample Problems &lt;/h2&gt;
             &lt;p&gt; Here is where you show a sample problem, a very simple one. You will then explain how to solve it and redirect them to a more difficult (still simple) problem. &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Time</title>
+      <link>http://macwebdev.ca/lesson/time/</link>
+      <pubDate>Wed, 30 Nov 2016 21:30:33 -0500</pubDate>
+      
+      <guid>http://macwebdev.ca/lesson/time/</guid>
+      <description>&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;i&gt;Lesson created by Vincent Macri&lt;/i&gt;
+            &lt;p&gt;The universe was created on January 1st, 1970.&lt;/p&gt;
+            &lt;p&gt;This lesson will teach you how to keep track of time. The general idea is to get the difference between the current time, and when the timer started.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&#34;tab-content&#34;&gt;
+                &lt;div id=&#34;turing&#34; class=&#34;tab-pane fade in active&#34;&gt;
+                &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
+                    &lt;code&gt;
+                        var startTime, endTime : int % Declare the two variables to keep track of time.
+                        startTime := Time.Sec % Set startTime to the number of seconds since the start of the universe (1970).
+                        % Do stuff
+                        delay(5000) % Wait 5 seconds, for demonstration purposes.
+                        endTime := Time.Sec % Set endTime to the number of seconds since the start of the universe (1970).
+                        put(endTime - startTime) % Output the difference between startTime and endTime.
+
+                        % Note: Turing rounds passed time somewhat unpredictably. It&#39;s accurate enough for most purposes, however.
+                    &lt;/code&gt;
+                &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;python&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
+                        &lt;code&gt;
+                            import time # Import the time module, so we can use the time functions.
+                            startTime = time.time() # Set startTime to the number of seconds since the start of the universe (1970).
+                            time.sleep(5); # Wait 5 seconds, for demonstration purposes.
+                            endTime = time.time() # Set endTime to the number of seconds since the start of the universe (1970).
+                            print(endTime - startTime) # Output the difference between startTime and endTime.
+
+                            # Note: In Python, time.time() returns the time since the start of the universe in seconds as a float. The precision can vary
+                            # between machines however. It is not guaranteed to be more precise than 1 second.
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;java&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
+                        &lt;code&gt;
+                            long startTime = System.currentTimeMillis(); // Set startTime to the number of milliseconds since the start of the universe (1970)
+
+                            // Delays in Java are more verbose than in other languages.
+                            try {
+                                Thread.sleep(5000); // Wait for 5 seconds.
+                            } catch(InterruptedException e) { // Catch an error that can (but almost never does) occur when using Thread.sleep().
+                                e.printStackTrace(); // If there is an error (which there shouldn&#39;t be), print the error message.
+                            }
+
+
+                            endTime = System.currentTimeMillis(); // Set endTime to the number of milliseconds since the start of the universe (1970).
+                            System.out.println(endTime - startTime); // Output the difference between startTime and endTime.
+
+                            long timeNow = System.currentTimeMillis();
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Sample&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;h2&gt; Sample Problem &lt;/h2&gt;
+            &lt;p&gt;Write a program that waits five seconds without using delay.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

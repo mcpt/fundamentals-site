@@ -599,13 +599,13 @@ Prism.languages.insertBefore('java','function', {
 	}
 });
 
-Prism.languages.python= {
+Prism.languages.python = {
 	'triple-quoted-string': {
 		pattern: /"""[\s\S]+?"""|'''[\s\S]+?'''/,
 		alias: 'string'
 	},
 	'comment': {
-		pattern: /(^|[^\\])%.*/,
+		pattern: /(^|[^\\])#.*/,
 		lookbehind: true
 	},
 	'string': {
@@ -630,7 +630,7 @@ Prism.languages.python= {
 Prism.languages.turing = {
 	'comment': [
 		{
-			pattern: /(^|[^\\])\/\*[\w\W]*?\*\//,
+			pattern: /(^|[^\\])%.*/,
 			lookbehind: true
 		},
 		{
@@ -650,7 +650,6 @@ Prism.languages.turing = {
 	'operator': /\*\*|\^|#|\*|\/|div|mod|rem|shl|shr|\+|-|xor|<|>|=|<=|>=|not=|in|not|in|not|and|or|=>/,
 	'punctuation': /[{}[\];(),.:]/
 };
-
 
 (function(){
 

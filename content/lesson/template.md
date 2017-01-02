@@ -16,23 +16,30 @@ date = "2016-11-30T21:30:33-05:00"
 [//]:<> (CODE STARTS HERE)
 <div id = "Code" class = "container">
     <div class = "row">
-        <div class = "col-md-4">
-            <h3>Turing</h3>
-            <pre class="language-turing line-numbers">
-                <code>put("Hello World!")</code>
-            </pre>
-        </div>
-        <div class = "col-md-4">
-            <h3>Python</h3>
-            <pre class="language-python line-numbers">
-                <code>print('Hello World!')</code>
-            </pre>
-        </div>
-        <div class = "col-md-4">
-            <h3>Java</h3>
-            <pre class="language-java line-numbers">
-                <code>System.out.println("Hello World!");</code>
-            </pre>
+        <div class = "col-md-12">
+            <ul class="nav nav-tabs tabs-3" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#turing" role="tab">Turing</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#python" role="tab">Python</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#java" role="tab">Java</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="turing" class="tab-pane fade in active">
+                    <pre class="language-turing line-numbers">
+                        <code>put("Hello World!")</code>
+                    </pre>
+                </div>
+                <div id="python" class="tab-pane fade">
+                    <pre class="language-python line-numbers">
+                        <code>print('Hello World!')</code>
+                    </pre>
+                </div>
+                <div id="java" class="tab-pane fade">
+                    <pre class="language-java line-numbers">
+                        <code>System.out.println("Hello World!");</code>
+                    </pre>
+                </div>
+            </div>
         </div>
     </div>
 </div>
