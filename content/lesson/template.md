@@ -7,7 +7,7 @@ date = "2016-11-30T21:30:33-05:00"
 <div id = "Description" class = "container">
     <div class = "row">
         <div class = "col-md-12">
-		<i>Lesson created by [author]</i>
+		        <i>Lesson created by [author]</i>
             <p>This is a sample file to show you how to create a proper lesson page. Here you would explain the topic, and teach them what they would need to know. Feel free to edit this section with subheadings, etc.</p>
         </div>
     </div>

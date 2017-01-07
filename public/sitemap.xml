@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://macwebdev.ca/</loc>
+    <loc>http://macwebdev.ca/lesson/conditionals/</loc>
+    <lastmod>2017-01-06T21:30:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://macwebdev.ca/lesson/loops/</loc>
     <lastmod>2016-11-30T21:30:33-05:00</lastmod>
   </url>
   
@@ -14,6 +19,18 @@
   <url>
     <loc>http://macwebdev.ca/lesson/time/</loc>
     <lastmod>2016-11-30T21:30:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://macwebdev.ca/</loc>
+    <lastmod>2017-01-06T21:30:33-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://macwebdev.ca/lesson/</loc>
+    <lastmod>2017-01-06T21:30:33-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
