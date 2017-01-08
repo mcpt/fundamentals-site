@@ -82,25 +82,25 @@ date = "2016-11-30T21:30:33-05:00"
                 <div id="turing2" class="tab-pane fade in active">
                     <pre class="language-turing line-numbers">
                         <code>for i : 1 .. 5
-					put (“Hello World!”)
-end for
+			               put (“Hello World!”)
+			            end for
 
                           </code>
                     </pre>
                 </div>
                 <div id="python2" class="tab-pane fade">
                     <pre class="language-python line-numbers">
-                        <code>for (initial condition; condition; increment){
-                            print “Hello World!”
-                        }
+                        <code>for i in range (1, 5):
+			              print “Hello World!”
+
                         </code>
                     </pre>
                 </div>
                 <div id="java2" class="tab-pane fade">
                     <pre class="language-java line-numbers">
                         <code>for (int i = 0; i < 5; i++){
-				System.out.println(“Hello World!”);
-} 
+			               System.out.println(“Hello World!”);
+				        } 
 
                         </code>
                     </pre>
@@ -135,23 +135,23 @@ end for
                 <div id="turing2" class="tab-pane fade in active">
                     <pre class="language-turing line-numbers">
                         <code>for i : 3..14 by 3
-                          		print i
+			               put i
+				        end for
                           </code>
                     </pre>
                 </div>
                 <div id="python2" class="tab-pane fade">
                     <pre class="language-python line-numbers">
                         <code>for i in range (1, 5):
-						print i	
-                        		}
+			               print i	
                         </code>
                     </pre>
                 </div>
                 <div id="java2" class="tab-pane fade">
                     <pre class="language-java line-numbers">
                         <code>for (int i = 3; i <=14; i+=3){
-                            System.out.println (i);
-                        }
+			               System.out.println (i);
+				        }
                         </code>
                     </pre>
                 </div>
@@ -171,9 +171,9 @@ end for
             <p>Use counted loops to output a 5 by 5 times table as follows:</p>
 			<p>1   2    3    4    5</p>
 			<p>2   4    6    8    10</p>
-			<p>3   6    9    12  15</p>
-			<p>4   8    12  16  20</p>
-			<p>5   10  15  20  25</p>
+			<p>3   6    9    12   15</p>
+			<p>4   8    12   16   20</p>
+			<p>5   10   15   20   25</p>
         </div>
     </div>
 </div>
