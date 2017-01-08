@@ -9,7 +9,7 @@ date = "2016-11-30T21:30:33-05:00"
         <div class = "col-md-12">
 		        <i>Lesson created by Abdul Arif</i>
             <p>There are two types of loops: counted loops and conditional loops.</p>
-            <h3>Counted Loops</h3>
+            <h2>Counted Loops</h2>
             <p>Counted loops execute a predetermined number of times. The following provides an overview of counted loops:</p>
         </div>
     </div>
@@ -91,7 +91,7 @@ end for
                 <div id="python2" class="tab-pane fade">
                     <pre class="language-python line-numbers">
                         <code>for (initial condition; condition; increment){
-                            print i
+                            print “Hello World!”
                         }
                         </code>
                     </pre>
@@ -142,7 +142,7 @@ end for
                 <div id="python2" class="tab-pane fade">
                     <pre class="language-python line-numbers">
                         <code>for i in range (1, 5):
-						print “Hello World!”
+						print i	
                         		}
                         </code>
                     </pre>
@@ -167,8 +167,13 @@ end for
 <div id = "Description" class = "container">
     <div class = "row">
         <div class = "col-md-12">
-		 <h3>Counted Loops</h3>
-            <p>Counted loops execute a predetermined number of times. The following provides an overview of counted loops:</p>
+		 <h3>Challenge Problem</h3>
+            <p>Use counted loops to output a 5 by 5 times table as follows:</p>
+			<p>1   2    3    4    5</p>
+			<p>2   4    6    8    10</p>
+			<p>3   6    9    12  15</p>
+			<p>4   8    12  16  20</p>
+			<p>5   10  15  20  25</p>
         </div>
     </div>
 </div>
@@ -179,9 +184,106 @@ end for
 <div id = "Sample" class = "container">
     <div class = "row">
         <div class = "col-md-12">
-            <h2> Sample Problems </h2>
-            <p> Here is where you show a sample problem, a very simple one. You will then explain how to solve it and redirect them to a more difficult (still simple) problem. </p>
+            <h2> Conditional Loops </h2>
+            <p> Conditional Loops execute until a specific condition is met.  For example, a program may ask the user to keep entering a password until it is correct.  An additional control variable is also required with these types of loops.
+</p>
+		<p>\nIf we needed to find the number of times we need to divide the number 10 by 2 to get a value less than 1, we could do this as follows:
+</p>
         </div>
     </div>
 </div>
 [//]:<> (SAMPLE ENDS HERE)
+
+
+[//]:<> (CONDITIONAL LOOPS STARTS HERE)
+<div id = "Code" class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <ul class="nav nav-tabs tabs-3" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#turing2" role="tab">Turing</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#python2" role="tab">Python</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#java2" role="tab">Java</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="turing2" class="tab-pane fade in active">
+                    <pre class="language-turing line-numbers">
+                        <code>var value: int := 10
+						var numDivides: int := 0
+						loop
+							value = value / 2
+							numDivides := numDivides +1
+							exit when value <1
+						end loop
+						put (numDivides)
+
+
+                          </code>
+                    </pre>
+                </div>
+                <div id="python2" class="tab-pane fade">
+                    <pre class="language-python line-numbers">
+                        <code>value = 10
+						numDivides = 0
+						while (true):
+							value = value / 2
+							numDivides ++
+							if (value < 1): break
+						print numDivides
+
+						OR
+
+						value = 10
+						numDivides = 0
+						while (value >= 1):
+							value = value / 2
+							numDivides ++
+						print numDivides
+
+                        </code>
+                    </pre>
+                </div>
+                <div id="java2" class="tab-pane fade">
+                    <pre class="language-java line-numbers">
+                        <code>int value = 10;
+						int numDivides = 0;
+						while (true){
+							value = value / 2;
+							numDivides ++;
+							if (value <1)
+								break;
+						}
+						System.out.println(numDivides)
+						
+						OR
+
+						int value = 10;
+						int numDivides = 0;
+						while (value >= 1){
+							value = value / 2;
+							numDivides ++;
+						}
+						System.out.println(numDivides)
+
+
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[//]:<> (CONDITIONAL LOOPS ENDS HERE)
+
+[//]:<> (LESSON STARTS HERE)
+<div id = "Description" class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+		 <h3>Challenge Problem</h3>
+            <p>Use a conditional loop to output the first 10 numbers in the Fibonacci Sequence.  </p>
+        </div>
+    </div>
+</div>
+
+
+
