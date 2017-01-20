@@ -22,6 +22,15 @@
   </url>
   
   <url>
+    <loc>http://macwebdev.ca/lesson/variables/</loc>
+    <lastmod>2016-11-30T21:30:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://macwebdev.ca/lesson/Loops/</loc>
+  </url>
+  
+  <url>
     <loc>http://macwebdev.ca/</loc>
     <lastmod>2017-01-06T21:30:33-05:00</lastmod>
     <priority>0</priority>
@@ -35,6 +44,10 @@
   
   <url>
     <loc>http://macwebdev.ca/lesson/</loc>
+  </url>
+  
+  <url>
+    <loc>http://macwebdev.ca/resources/</loc>
   </url>
   
 </urlset>
