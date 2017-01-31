@@ -68,8 +68,6 @@ date = "2016-11-30T21:30:33-05:00"
 
 							endTime = System.currentTimeMillis(); // Set endTime to the number of milliseconds since the start of the universe (1970).
 							System.out.println(endTime - startTime); // Output the difference between startTime and endTime.
-
-							long timeNow = System.currentTimeMillis();
 						</code>
 					</pre>
                 </div>
