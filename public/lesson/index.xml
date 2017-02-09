@@ -272,274 +272,6 @@
     </item>
     
     <item>
-      <title>Loops</title>
-      <link>http://macwebdev.ca/lesson/loops/</link>
-      <pubDate>Wed, 30 Nov 2016 21:30:33 -0500</pubDate>
-      
-      <guid>http://macwebdev.ca/lesson/loops/</guid>
-      <description>&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-                &lt;i&gt;Lesson created by Abdul Arif&lt;/i&gt;
-            &lt;p&gt;There are two types of loops: counted loops and conditional loops.&lt;/p&gt;
-            &lt;h2&gt;Counted Loops&lt;/h2&gt;
-            &lt;p&gt;Counted loops execute a predetermined number of times. The following provides an overview of counted loops:&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-
-            &lt;div class=&#34;tab-content&#34;&gt;
-                &lt;div id=&#34;turing&#34; class=&#34;tab-pane fade in active&#34;&gt;
-                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
-                        &lt;code&gt;for i : startValue .. endValue
-                          % code
-                          % code
-                        end for
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;python&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
-                        &lt;code&gt;for iteratingVariable in sequence:
-                          #code
-                          #code
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;java&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
-                        &lt;code&gt;for (initial condition; condition; increment){
-                            //code
-                            //code
-                        }
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34; style = &#34;margin: 20px 0px 20px 0px&#34;&gt;
-      The following example will make the use of these loops clearer.  Let’s say we wanted to print “Hello World!” 5 times.  We could accomplish this as follows:
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing2&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python2&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java2&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-
-            &lt;div class=&#34;tab-content&#34;&gt;
-                &lt;div id=&#34;turing2&#34; class=&#34;tab-pane fade in active&#34;&gt;
-                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
-                        &lt;code&gt;for i : 1 .. 5
-                           put (“Hello World!”)
-                        end for
-
-                          &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;python2&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
-                        &lt;code&gt;for i in range (1, 5):
-                          print “Hello World!”
-
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;java2&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
-                        &lt;code&gt;for (int i = 0; i &lt; 5; i++){
-                           System.out.println(“Hello World!”);
-                        } 
-
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34; style = &#34;margin: 20px 0px 20px 0px&#34;&gt;
-      But, what if we wanted to increment by a number other than one?  For example, to output all the multiples of 3 from 1 to 14, we could iterate from 1 to 14 and use conditionals to check for multiplicity.  However, we can achieve the same result using loops as follows.  (We know that the first number will be 3)
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing2&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python2&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java2&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-
-            &lt;div class=&#34;tab-content&#34;&gt;
-                &lt;div id=&#34;turing2&#34; class=&#34;tab-pane fade in active&#34;&gt;
-                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
-                        &lt;code&gt;for i : 3..14 by 3
-                           put i
-                        end for
-                          &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;python2&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
-                        &lt;code&gt;for i in range (1, 5):
-                           print i  
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;java2&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
-                        &lt;code&gt;for (int i = 3; i &lt;=14; i+=3){
-                           System.out.println (i);
-                        }
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-         &lt;h3&gt;Challenge Problem&lt;/h3&gt;
-            &lt;p&gt;Use counted loops to output a 5 by 5 times table as follows:&lt;/p&gt;
-            &lt;p&gt;1   2    3    4    5&lt;/p&gt;
-            &lt;p&gt;2   4    6    8    10&lt;/p&gt;
-            &lt;p&gt;3   6    9    12   15&lt;/p&gt;
-            &lt;p&gt;4   8    12   16   20&lt;/p&gt;
-            &lt;p&gt;5   10   15   20   25&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Sample&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-            &lt;h2&gt; Conditional Loops &lt;/h2&gt;
-            &lt;p&gt; Conditional Loops execute until a specific condition is met.  For example, a program may ask the user to keep entering a password until it is correct.  An additional control variable is also required with these types of loops.
-&lt;/p&gt;
-        &lt;p&gt;\nIf we needed to find the number of times we need to divide the number 10 by 2 to get a value less than 1, we could do this as follows:
-&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing2&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python2&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
-                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java2&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-
-            &lt;div class=&#34;tab-content&#34;&gt;
-                &lt;div id=&#34;turing2&#34; class=&#34;tab-pane fade in active&#34;&gt;
-                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
-                        &lt;code&gt;var value: int := 10
-                        var numDivides: int := 0
-                        loop
-                            value = value / 2
-                            numDivides := numDivides +1
-                            exit when value &lt;1
-                        end loop
-                        put (numDivides)
-
-
-                          &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;python2&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
-                        &lt;code&gt;value = 10
-                        numDivides = 0
-                        while (true):
-                            value = value / 2
-                            numDivides ++
-                            if (value &lt; 1): break
-                        print numDivides
-
-                        OR
-
-                        value = 10
-                        numDivides = 0
-                        while (value &gt;= 1):
-                            value = value / 2
-                            numDivides ++
-                        print numDivides
-
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-                &lt;div id=&#34;java2&#34; class=&#34;tab-pane fade&#34;&gt;
-                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
-                        &lt;code&gt;int value = 10;
-                        int numDivides = 0;
-                        while (true){
-                            value = value / 2;
-                            numDivides ++;
-                            if (value &lt;1)
-                                break;
-                        }
-                        System.out.println(numDivides)
-                        
-                        OR
-
-                        int value = 10;
-                        int numDivides = 0;
-                        while (value &gt;= 1){
-                            value = value / 2;
-                            numDivides ++;
-                        }
-                        System.out.println(numDivides)
-
-
-                        &lt;/code&gt;
-                    &lt;/pre&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
-    &lt;div class = &#34;row&#34;&gt;
-        &lt;div class = &#34;col-md-12&#34;&gt;
-         &lt;h3&gt;Challenge Problem&lt;/h3&gt;
-            &lt;p&gt;Use a conditional loop to output the first 10 numbers in the Fibonacci Sequence.  &lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Template</title>
       <link>http://macwebdev.ca/lesson/template/</link>
       <pubDate>Wed, 30 Nov 2016 21:30:33 -0500</pubDate>
@@ -548,7 +280,7 @@
       <description>&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
     &lt;div class = &#34;row&#34;&gt;
         &lt;div class = &#34;col-md-12&#34;&gt;
-                &lt;i&gt;Lesson created by [author]&lt;/i&gt;
+            &lt;i&gt;Lesson created by [author]&lt;/i&gt;
             &lt;p&gt;This is a sample file to show you how to create a proper lesson page. Here you would explain the topic, and teach them what they would need to know. Feel free to edit this section with subheadings, etc.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -672,8 +404,6 @@
 
                             endTime = System.currentTimeMillis(); // Set endTime to the number of milliseconds since the start of the universe (1970).
                             System.out.println(endTime - startTime); // Output the difference between startTime and endTime.
-
-                            long timeNow = System.currentTimeMillis();
                         &lt;/code&gt;
                     &lt;/pre&gt;
                 &lt;/div&gt;
@@ -726,8 +456,7 @@
                             var lastName : string := &#34;Macri&#34;
                             var languages : int % In Turing, you can declare a variable, and give it a value later.
                             languages := 3
-
-                            put (firstName + &#34; &#34; + lastName + &#34; made this lesson. It teaches variables in &#34; + intstr (languages) + &#34; languages!&#34;)
+                            put(firstName + &#34; &#34; + lastName + &#34; made this lesson. It teaches variables in &#34; + intstr(languages) + &#34; languages!&#34;)
                         &lt;/code&gt;
                     &lt;/pre&gt;
                 &lt;/div&gt;
@@ -739,7 +468,7 @@
                             languages = 0 # Python doesn&#39;t let you declare variables without assigning them,
                             languages = 3 # But you can always just assign a new value when you are ready.
 
-                            print (str.format(&#34;{} {} made this lesson. It teaches variables in {} languages!&#34;, firstName, lastName, languages))
+                            print(str.format(&#34;{} {} made this lesson. It teaches variables in {} languages!&#34;, firstName, lastName, languages))
                         &lt;/code&gt;
                     &lt;/pre&gt;
                 &lt;/div&gt;
@@ -765,7 +494,7 @@
         &lt;div class = &#34;col-md-12&#34;&gt;
             &lt;p&gt;You may have noticed that Turing and Java use double quotes (&#34; &#34;) for strings, while Python uses single quotes (&#39; &#39;). In Turing and Java, double quotes are used for strings, while single quotes are used for single characters. In Python, you can use either double or single quotes, but Python programmers tend to prefer single quotes.&lt;/p&gt;
             &lt;p&gt;For Turing and Java, we concatenated the variables with the string. Concatenate is a fancy word for put togther.&lt;/p&gt;
-            &lt;p&gt;In Python, we used the str.format() command. It formats strings for us. We use {} in place of the variables, and then list the variables in order at the end.&lt;/p&gt;
+            &lt;p&gt;In Python, we used the &lt;code class=language-python&gt;str.format()&lt;/code&gt; command. It formats strings for us. We use {} in place of the variables, and then list the variables in order at the end.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

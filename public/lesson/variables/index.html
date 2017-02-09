@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Time</title>
+    <title>Variables</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="http://macwebdev.ca/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="http://macwebdev.ca/img/favicon-32x32.png" sizes="32x32">
@@ -67,16 +67,16 @@
                 <div id = "Title" class = "container">
                     <div class = "row">
                         <div class = "col-md-1">
-                            <h1>Time</h1>
+                            <h1>Variables</h1>
                         </div>
                     </div>
                 </div>
                 <div id = "Description" class = "container">
     <div class = "row">
         <div class = "col-md-12">
-            <i>Lesson created by Vincent Macri</i>
-            <p>The universe was created on January 1st, 1970.</p>
-            <p>This lesson will teach you how to keep track of time. The general idea is to get the difference between the current time, and when the timer started.</p>
+        <i>Lesson created by Vincent Macri</i>
+        <p>Variables allow you to store values. They are one of the most important parts of programming, maybe even the most important.</p>
+        <p>In this lesson, we will be focusing on the syntax of using variables.</p>
         </div>
     </div>
 </div>
@@ -89,51 +89,40 @@
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#python" role="tab">Python</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#java" role="tab">Java</a></li>
             </ul>
-
+        
             <div class="tab-content">
                 <div id="turing" class="tab-pane fade in active">
-                <pre class="language-turing line-numbers">
-                    <code>
-                        var startTime, endTime : int % Declare the two variables to keep track of time.
-                        startTime := Time.Sec % Set startTime to the number of seconds since the start of the universe (1970).
-                        % Do stuff
-                        delay(5000) % Wait 5 seconds, for demonstration purposes.
-                        endTime := Time.Sec % Set endTime to the number of seconds since the start of the universe (1970).
-                        put(endTime - startTime) % Output the difference between startTime and endTime.
-
-                        % Note: Turing rounds passed time somewhat unpredictably. It's accurate enough for most purposes, however.
-                    </code>
-                </pre>
+                    <pre class="language-turing line-numbers">
+                        <code>
+                            var firstName : string := "Vincent"
+                            var lastName : string := "Macri"
+                            var languages : int % In Turing, you can declare a variable, and give it a value later.
+                            languages := 3
+                            put(firstName + " " + lastName + " made this lesson. It teaches variables in " + intstr(languages) + " languages!")
+                        </code>
+                    </pre>
                 </div>
                 <div id="python" class="tab-pane fade">
                     <pre class="language-python line-numbers">
                         <code>
-                            import time # Import the time module, so we can use the time functions.
-                            startTime = time.time() # Set startTime to the number of seconds since the start of the universe (1970).
-                            time.sleep(5); # Wait 5 seconds, for demonstration purposes.
-                            endTime = time.time() # Set endTime to the number of seconds since the start of the universe (1970).
-                            print(endTime - startTime) # Output the difference between startTime and endTime.
+                            firstName = 'Vincent'
+                            lastName = 'Macri'
+                            languages = 0 # Python doesn't let you declare variables without assigning them,
+                            languages = 3 # But you can always just assign a new value when you are ready.
 
-                            # Note: In Python, time.time() returns the time since the start of the universe in seconds as a float. The precision can vary
-                            # between machines however. It is not guaranteed to be more precise than 1 second.
+                            print(str.format("{} {} made this lesson. It teaches variables in {} languages!", firstName, lastName, languages))
                         </code>
                     </pre>
                 </div>
                 <div id="java" class="tab-pane fade">
                     <pre class="language-java line-numbers">
                         <code>
-                            long startTime = System.currentTimeMillis(); // Set startTime to the number of milliseconds since the start of the universe (1970)
+                            String firstName = "Vincent";
+                            String lastName = "Macri";
+                            int languages; // In Java, you can declare a variable, and give it a value later.
+                            languages = 3;
 
-                            // Delays in Java are more verbose than in other languages.
-                            try {
-                                Thread.sleep(5000); // Wait for 5 seconds.
-                            } catch(InterruptedException e) { // Catch an error that can (but almost never does) occur when using Thread.sleep().
-                                e.printStackTrace(); // If there is an error (which there shouldn't be), print the error message.
-                            }
-
-
-                            endTime = System.currentTimeMillis(); // Set endTime to the number of milliseconds since the start of the universe (1970).
-                            System.out.println(endTime - startTime); // Output the difference between startTime and endTime.
+                            System.out.println(firstName + " " + lastName + " made this lesson. It teaches variables in " + languages + " languages!");
                         </code>
                     </pre>
                 </div>
@@ -142,11 +131,22 @@
     </div>
 </div>
 
+<div id = "Description" class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <p>You may have noticed that Turing and Java use double quotes (" ") for strings, while Python uses single quotes (' '). In Turing and Java, double quotes are used for strings, while single quotes are used for single characters. In Python, you can use either double or single quotes, but Python programmers tend to prefer single quotes.</p>
+            <p>For Turing and Java, we concatenated the variables with the string. Concatenate is a fancy word for put togther.</p>
+            <p>In Python, we used the <code class=language-python>str.format()</code> command. It formats strings for us. We use {} in place of the variables, and then list the variables in order at the end.</p>
+        </div>
+    </div>
+</div>
+
 <div id = "Sample" class = "container">
     <div class = "row">
         <div class = "col-md-12">
-            <h2> Sample Problem </h2>
-            <p>Write a program that waits five seconds without using delay.</p>
+            <h2> Sample Problems </h2>
+            <p>Write a program where the user can enter their first name, lastName, and age, and then output "<i>firstName</i> <i>lastName</i> is <i>age</i> years old."</p>
+            <p>Write a program where the user can enter two numbers, and then output the sum of the numbers.</p>
         </div>
     </div>
 </div>
