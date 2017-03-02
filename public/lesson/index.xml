@@ -22,11 +22,11 @@
                 &lt;i&gt;Lesson created by Richard Yi&lt;/i&gt;
             &lt;/p&gt;
             &lt;p&gt;
-                Conditional statements, or &#34;if statements&#34;, let you run some code only if a certain condition is true.
+                Conditional statements, or &#34;if statements&#34;, let you run a block of code only if a certain condition is true.
                     &lt;br/&gt;
-                The condition can check if 2 values are equal, if a value is less than another, if a value is more than another, or a mixture of these
+                The condition can check if 2 values are equal, if a value is less than another, if a value is more than another, or a mixture of conditions.
             &lt;/p&gt;
-            &lt;p&gt;If the condition turns out to be true, it will excecute the code in the block below&lt;/p&gt;
+            &lt;p&gt;If the condition is true, it will excecute the code in the block below&lt;/p&gt;
             &lt;p&gt;For example, you can ask for the user&#39;s age and see if they&#39;re an adult.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -47,7 +47,7 @@
                     &lt;code&gt;
                         var age : int
                         
-                        put &#34;Enter your age.&#34;
+                        put &#34;Please enter your age: &#34;
                         get age
                         
                         if age &lt; 18 then
@@ -60,7 +60,7 @@
                 &lt;div id=&#34;python&#34; class=&#34;tab-pane fade&#34;&gt;
                     &lt;pre class=&#34;language-python line-numbers&#34;&gt;
                         &lt;code&gt;
-                            age = int(raw_input(&#39;Enter your age.&#39;))
+                            age = int(raw_input(&#39;Please enter your age: &#39;))
                             
                             if age &lt; 18:
                                 print(&#39;You are not an adult.&#39;)
@@ -92,7 +92,7 @@
 &lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
     &lt;div class = &#34;row&#34;&gt;
         &lt;div class = &#34;col-md-12&#34; style = &#34;margin: 20px 0px 20px 0px&#34;&gt;
-            If you want some code to run if some condition is true, and want some other code to run if that condition isn&#39;t true, you can use an &lt;b&gt;else&lt;/b&gt; with the if statement
+            If you want a block of code to run if a condition is true, and want &lt;b&gt;another&lt;/b&gt; block of code to run if that condition is &lt;b&gt;not true&lt;/b&gt;, you can use an &lt;b&gt;else&lt;/b&gt; along with the if statement
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -112,7 +112,7 @@
                         &lt;code&gt;
                             var age : int
                             
-                            put &#34;Enter your age.&#34;
+                            put &#34;Please enter your age: &#34;
                             get age
                             
                             if age &lt; 18 then
@@ -128,7 +128,7 @@
                 &lt;div id=&#34;python2&#34; class=&#34;tab-pane fade&#34;&gt;
                     &lt;pre class=&#34;language-python line-numbers&#34;&gt;
                         &lt;code&gt;
-                            age = int(raw_input(&#39;Enter your age.&#39;))
+                            age = int(raw_input(&#39;Please enter your age: &#39;))
                             
                             if age &lt; 18:
                                 print(&#39;You are not an adult.&#39;)
@@ -168,11 +168,11 @@
 &lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
     &lt;div class = &#34;row&#34;&gt;
         &lt;div class = &#34;col-md-12&#34; style = &#34;margin: 20px 0px 20px 0px&#34;&gt;
-            &lt;p&gt;You can use &lt;b&gt;elsif&lt;/b&gt; (a.k.a. &lt;b&gt;elif&lt;/b&gt; or &lt;b&gt;else if&lt;/b&gt;) to chain &lt;b&gt;if&lt;/b&gt; statements together.&lt;/p&gt;
+            &lt;p&gt;You can use &lt;b&gt;else if&lt;/b&gt; (a.k.a. &lt;b&gt;elif&lt;/b&gt; or &lt;b&gt;elsif&lt;/b&gt;) to chain &lt;b&gt;if&lt;/b&gt; statements together.&lt;/p&gt;
             &lt;p&gt;
-                If the condition in the &lt;b&gt;if&lt;/b&gt; statement is not true, then it checks for the condition in the next &lt;b&gt;elsif&lt;/b&gt; statement, then the next, and so on.
+                If the condition in the &lt;b&gt;if&lt;/b&gt; statement is not true, then it checks for the condition in the next &lt;b&gt;else if&lt;/b&gt; statement, then the next, and so on.
                     &lt;br/&gt;
-                If none of the &lt;b&gt;if&lt;/b&gt; or &lt;b&gt;elsif&lt;/b&gt; statements are true, it goes to the &lt;b&gt;else&lt;/b&gt; block (if there is one).
+                If none of the &lt;b&gt;if&lt;/b&gt; or &lt;b&gt;else if&lt;/b&gt; statements are true, it goes to the &lt;b&gt;else&lt;/b&gt; block (if there is one).
             &lt;/p&gt;
         &lt;/div&gt;
     &lt;/div
@@ -193,17 +193,17 @@
                         &lt;code&gt;
                             var age : int
                             
-                            put &#34;Enter your age.&#34;
+                            put &#34;Please enter your age: &#34;
                             get age
                             
                             if age &lt; 14 then
-                                put &#34;You haven&#39;t started high school yet.&#34;
-                            elseif age &lt; 18 then
-                                put &#34;You&#39;re not an adult.&#34;
-                            elseif age &gt; 200 then
+                                put &#34;You have not started high school yet.&#34;
+                            elsif age &lt; 18 then
+                                put &#34;You are not an adult.&#34;
+                            elsif age &gt; 200 then
                                 put &#34;Uh...&#34;
                             else
-                                put &#34;You&#39;re an adult.&#34;
+                                put &#34;You are an adult.&#34;
                             end if
                         &lt;/code&gt;
                     &lt;/pre&gt;
@@ -211,16 +211,16 @@
                 &lt;div id=&#34;python3&#34; class=&#34;tab-pane fade&#34;&gt;
                     &lt;pre class=&#34;language-python line-numbers&#34;&gt;
                         &lt;code&gt;
-                            age = int(raw_input(&#39;Enter your age.&#39;))
+                            age = int(raw_input(&#39;Please enter your age: &#39;))
                             
                             if age &lt; 14:
-                                put &#34;You haven&#39;t started high school yet.&#34;
+                                print(&#39;You have not started high school yet.&#39;)
                             elif age &lt; 18:
-                                put &#34;You&#39;re not an adult.&#34;
+                                print(&#39;You are not an adult.&#39;)
                             elif age &gt; 200:
-                                put &#34;Uh...&#34;
+                                print(&#39;Uh...&#39;)
                             else
-                                put &#34;You&#39;re an adult.&#34;
+                                print(&#39;You are an adult.&#39;)
                         &lt;/code&gt;
                     &lt;/pre&gt;
                 &lt;/div&gt;
@@ -234,11 +234,11 @@
 
                             if(age &lt; 14)
                             {
-                                System.out.println(&#34;You haven&#39;t started high school yet.&#34;);
+                                System.out.println(&#34;You have not started high school yet.&#34;);
                             }
                             else if(age &lt; 18)
                             {
-                                System.out.println(&#34;You&#39;re not an adult.&#34;);
+                                System.out.println(&#34;You are not an adult.&#34;);
                             }
                             else if(age &gt; 200)
                             {
@@ -246,7 +246,7 @@
                             }
                             else
                             {
-                                System.out.println(&#34;You&#39;re an adult.&#34;);
+                                System.out.println(&#34;You are an adult.&#34;);
                             }
                         &lt;/code&gt;
                     &lt;/pre&gt;

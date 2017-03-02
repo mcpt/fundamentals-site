@@ -35,10 +35,10 @@ date = "2017-01-06T21:30:33-05:00"
 				<pre class="language-turing line-numbers">
 					<code>
 						var age : int
-						
+
 						put "Please enter your age: "
 						get age
-						
+
 						if age < 18 then
 							put "You are not an adult."
 							%If age is less than 18, every line until "end if" will be excecuted
@@ -50,7 +50,7 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-python line-numbers">
 						<code>
 							age = int(raw_input('Please enter your age: '))
-							
+
 							if age < 18:
 								print('You are not an adult.')
 								#If age is less than 18, every line on this indent level will be excecuted
@@ -61,10 +61,10 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-java line-numbers">
 						<code>
 							BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-							
+
 							System.out.print("Please enter your age: ");
 							int age = Integer.parseInt(in.readLine());
-							
+
 							if (age < 18)
 							{
 								System.out.println("You are not an adult.");
@@ -102,10 +102,10 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-turing line-numbers">
 						<code>
 							var age : int
-							
+
 							put "Please enter your age: "
 							get age
-							
+
 							if age < 18 then
 								put "You are not an adult."
 								%If age is less than 18, every line until "else" will be excecuted
@@ -120,7 +120,7 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-python line-numbers">
 						<code>
 							age = int(raw_input('Please enter your age: '))
-							
+
 							if age < 18:
 								print('You are not an adult.')
 								#If age is less than 18, every line on this indent level will be excecuted
@@ -134,10 +134,10 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-java line-numbers">
 						<code>
 							BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-							
+
 							System.out.print("Please enter your age: ");
 							int age = Integer.parseInt(in.readLine());
-							
+
 							if (age < 18)
 							{
 								System.out.println("You are not an adult.");
@@ -163,7 +163,7 @@ date = "2017-01-06T21:30:33-05:00"
 			<p>You can use <b>else if</b> (a.k.a. <b>elif</b> or <b>elsif</b>) to chain <b>if</b> statements together.</p>
 			<p>
 				If the condition in the <b>if</b> statement is not true, then it checks for the condition in the next <b>else if</b> statement, then the next, and so on.
-					<br/>
+					</br>
 				If none of the <b>if</b> or <b>else if</b> statements are true, it goes to the <b>else</b> block (if there is one).
 			</p>
 		</div>
@@ -185,10 +185,10 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-turing line-numbers">
 						<code>
 							var age : int
-							
+
 							put "Please enter your age: "
 							get age
-							
+
 							if age < 14 then
 								put "You have not started high school yet."
 							elsif age < 18 then
@@ -205,7 +205,7 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-python line-numbers">
 						<code>
 							age = int(raw_input('Please enter your age: '))
-							
+
 							if age < 14:
 								print('You have not started high school yet.')
 							elif age < 18:
@@ -221,7 +221,7 @@ date = "2017-01-06T21:30:33-05:00"
 					<pre class="language-java line-numbers">
 						<code>
 							BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-							
+
 							System.out.print("Please enter your age: ");
 							int age = Integer.parseInt(in.readLine());
 
