@@ -46,10 +46,10 @@
                 &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
                     &lt;code&gt;
                         var age : int
-                        
+
                         put &#34;Please enter your age: &#34;
                         get age
-                        
+
                         if age &lt; 18 then
                             put &#34;You are not an adult.&#34;
                             %If age is less than 18, every line until &#34;end if&#34; will be excecuted
@@ -61,7 +61,7 @@
                     &lt;pre class=&#34;language-python line-numbers&#34;&gt;
                         &lt;code&gt;
                             age = int(raw_input(&#39;Please enter your age: &#39;))
-                            
+
                             if age &lt; 18:
                                 print(&#39;You are not an adult.&#39;)
                                 #If age is less than 18, every line on this indent level will be excecuted
@@ -72,10 +72,10 @@
                     &lt;pre class=&#34;language-java line-numbers&#34;&gt;
                         &lt;code&gt;
                             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-                            
+
                             System.out.print(&#34;Please enter your age: &#34;);
                             int age = Integer.parseInt(in.readLine());
-                            
+
                             if (age &lt; 18)
                             {
                                 System.out.println(&#34;You are not an adult.&#34;);
@@ -111,10 +111,10 @@
                     &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
                         &lt;code&gt;
                             var age : int
-                            
+
                             put &#34;Please enter your age: &#34;
                             get age
-                            
+
                             if age &lt; 18 then
                                 put &#34;You are not an adult.&#34;
                                 %If age is less than 18, every line until &#34;else&#34; will be excecuted
@@ -129,7 +129,7 @@
                     &lt;pre class=&#34;language-python line-numbers&#34;&gt;
                         &lt;code&gt;
                             age = int(raw_input(&#39;Please enter your age: &#39;))
-                            
+
                             if age &lt; 18:
                                 print(&#39;You are not an adult.&#39;)
                                 #If age is less than 18, every line on this indent level will be excecuted
@@ -143,10 +143,10 @@
                     &lt;pre class=&#34;language-java line-numbers&#34;&gt;
                         &lt;code&gt;
                             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-                            
+
                             System.out.print(&#34;Please enter your age: &#34;);
                             int age = Integer.parseInt(in.readLine());
-                            
+
                             if (age &lt; 18)
                             {
                                 System.out.println(&#34;You are not an adult.&#34;);
@@ -171,11 +171,12 @@
             &lt;p&gt;You can use &lt;b&gt;else if&lt;/b&gt; (a.k.a. &lt;b&gt;elif&lt;/b&gt; or &lt;b&gt;elsif&lt;/b&gt;) to chain &lt;b&gt;if&lt;/b&gt; statements together.&lt;/p&gt;
             &lt;p&gt;
                 If the condition in the &lt;b&gt;if&lt;/b&gt; statement is not true, then it checks for the condition in the next &lt;b&gt;else if&lt;/b&gt; statement, then the next, and so on.
-                    &lt;br/&gt;
+                    &lt;/br&gt;
                 If none of the &lt;b&gt;if&lt;/b&gt; or &lt;b&gt;else if&lt;/b&gt; statements are true, it goes to the &lt;b&gt;else&lt;/b&gt; block (if there is one).
             &lt;/p&gt;
         &lt;/div&gt;
     &lt;/div
+&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
@@ -192,10 +193,10 @@
                     &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
                         &lt;code&gt;
                             var age : int
-                            
+
                             put &#34;Please enter your age: &#34;
                             get age
-                            
+
                             if age &lt; 14 then
                                 put &#34;You have not started high school yet.&#34;
                             elsif age &lt; 18 then
@@ -212,7 +213,7 @@
                     &lt;pre class=&#34;language-python line-numbers&#34;&gt;
                         &lt;code&gt;
                             age = int(raw_input(&#39;Please enter your age: &#39;))
-                            
+
                             if age &lt; 14:
                                 print(&#39;You have not started high school yet.&#39;)
                             elif age &lt; 18:
@@ -228,7 +229,7 @@
                     &lt;pre class=&#34;language-java line-numbers&#34;&gt;
                         &lt;code&gt;
                             BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-                            
+
                             System.out.print(&#34;Please enter your age: &#34;);
                             int age = Integer.parseInt(in.readLine());
 
@@ -265,6 +266,274 @@
                     &lt;br/&gt;
                 If the user guesses one of the three numbers you picked, tell they won, otherwise, tell them they lost.
             &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Loops</title>
+      <link>http://macwebdev.ca/lesson/loops/</link>
+      <pubDate>Wed, 30 Nov 2016 21:30:33 -0500</pubDate>
+      
+      <guid>http://macwebdev.ca/lesson/loops/</guid>
+      <description>&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+                &lt;i&gt;Lesson created by Abdul Arif&lt;/i&gt;
+            &lt;p&gt;There are two types of loops: counted loops and conditional loops.&lt;/p&gt;
+            &lt;h2&gt;Counted Loops&lt;/h2&gt;
+            &lt;p&gt;Counted loops execute a predetermined number of times. The following provides an overview of counted loops:&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&#34;tab-content&#34;&gt;
+                &lt;div id=&#34;turing&#34; class=&#34;tab-pane fade in active&#34;&gt;
+                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
+                        &lt;code&gt;for i : startValue .. endValue
+                          % code
+                          % code
+                        end for
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;python&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
+                        &lt;code&gt;for iteratingVariable in sequence:
+                          #code
+                          #code
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;java&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
+                        &lt;code&gt;for (initial condition; condition; increment){
+                            //code
+                            //code
+                        }
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34; style = &#34;margin: 20px 0px 20px 0px&#34;&gt;
+      The following example will make the use of these loops clearer.  Let&#39;s say we wanted to print &#34;Hello World!&#34; 5 times.  We could accomplish this as follows:
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing2&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python2&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java2&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&#34;tab-content&#34;&gt;
+                &lt;div id=&#34;turing3&#34; class=&#34;tab-pane fade in active&#34;&gt;
+                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
+                        &lt;code&gt;for i : 1 .. 5
+                           put (&#34;Hello World!&#34;)
+                        end for
+
+                          &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;python3&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
+                        &lt;code&gt;for i in range (1, 5):
+                          print &#34;Hello World!&#34;
+
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;java3&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
+                        &lt;code&gt;for (int i = 0; i &lt; 5; i++){
+                           System.out.println(&#34;Hello World!&#34;);
+                        }
+
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34; style = &#34;margin: 20px 0px 20px 0px&#34;&gt;
+      But, what if we wanted to increment by a number other than one?  For example, to output all the multiples of 3 from 1 to 14, we could iterate from 1 to 14 and use conditionals to check for multiplicity.  However, we can achieve the same result using loops as follows.  (We know that the first number will be 3)
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing4&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python4&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java4&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&#34;tab-content&#34;&gt;
+                &lt;div id=&#34;turing4&#34; class=&#34;tab-pane fade in active&#34;&gt;
+                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
+                        &lt;code&gt;for i : 3..14 by 3
+                           put i
+                        end for
+                          &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;python4&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
+                        &lt;code&gt;for i in range (1, 5):
+                           print i
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;java4&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
+                        &lt;code&gt;for (int i = 3; i &lt;=14; i+=3){
+                           System.out.println (i);
+                        }
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+         &lt;h3&gt;Challenge Problem&lt;/h3&gt;
+            &lt;p&gt;Use counted loops to output a 5 by 5 times table as follows:&lt;/p&gt;
+            &lt;p&gt;1   2    3    4    5&lt;/p&gt;
+            &lt;p&gt;2   4    6    8    10&lt;/p&gt;
+            &lt;p&gt;3   6    9    12   15&lt;/p&gt;
+            &lt;p&gt;4   8    12   16   20&lt;/p&gt;
+            &lt;p&gt;5   10   15   20   25&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Sample&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;h2&gt; Conditional Loops &lt;/h2&gt;
+            &lt;p&gt; Conditional Loops execute until a specific condition is met.  For example, a program may ask the user to keep entering a password until it is correct.  An additional control variable is also required with these types of loops.
+&lt;/p&gt;
+        &lt;p&gt;If we needed to find the number of times we need to divide the number 10 by 2 to get a value less than 1, we could do this as follows:
+&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Code&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+            &lt;ul class=&#34;nav nav-tabs tabs-3&#34; role=&#34;tablist&#34;&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link active&#34; data-toggle=&#34;tab&#34; href=&#34;#turing2&#34; role=&#34;tab&#34;&gt;Turing&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#python2&#34; role=&#34;tab&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&#34;nav-item&#34;&gt;&lt;a class=&#34;nav-link&#34; data-toggle=&#34;tab&#34; href=&#34;#java2&#34; role=&#34;tab&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;div class=&#34;tab-content&#34;&gt;
+                &lt;div id=&#34;turing2&#34; class=&#34;tab-pane fade in active&#34;&gt;
+                    &lt;pre class=&#34;language-turing line-numbers&#34;&gt;
+                        &lt;code&gt;var value: int := 10
+                        var numDivides: int := 0
+                        loop
+                            value = value / 2
+                            numDivides := numDivides +1
+                            exit when value &lt;1
+                        end loop
+                        put (numDivides)
+
+
+                          &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;python2&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-python line-numbers&#34;&gt;
+                        &lt;code&gt;value = 10
+                        numDivides = 0
+                        while (true):
+                            value = value / 2
+                            numDivides ++
+                            if (value &lt; 1): break
+                        print numDivides
+
+                        OR
+
+                        value = 10
+                        numDivides = 0
+                        while (value &gt;= 1):
+                            value = value / 2
+                            numDivides ++
+                        print numDivides
+
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+                &lt;div id=&#34;java2&#34; class=&#34;tab-pane fade&#34;&gt;
+                    &lt;pre class=&#34;language-java line-numbers&#34;&gt;
+                        &lt;code&gt;int value = 10;
+                        int numDivides = 0;
+                        while (true){
+                            value = value / 2;
+                            numDivides ++;
+                            if (value &lt;1)
+                                break;
+                        }
+                        System.out.println(numDivides)
+
+                        OR
+
+                        int value = 10;
+                        int numDivides = 0;
+                        while (value &gt;= 1){
+                            value = value / 2;
+                            numDivides ++;
+                        }
+                        System.out.println(numDivides)
+
+
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id = &#34;Description&#34; class = &#34;container&#34;&gt;
+    &lt;div class = &#34;row&#34;&gt;
+        &lt;div class = &#34;col-md-12&#34;&gt;
+         &lt;h3&gt;Challenge Problem&lt;/h3&gt;
+            &lt;p&gt;Use a conditional loop to output the first 10 numbers in the Fibonacci Sequence.  &lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -512,44 +781,63 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://macwebdev.ca/lesson/Loops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://macwebdev.ca/lesson/Loops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Lessons</title>
       <link>http://macwebdev.ca/lesson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://macwebdev.ca/lesson/</guid>
       <description>&lt;div id = &#34;lessons&#34; class = &#34;container&#34;&gt;
+	&lt;div class =&#34;col-md-8&#34;&gt;
 		&lt;ul class=&#34;large-list&#34;&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/time&#34;&gt; Time &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/conditionals&#34;&gt; If Statements &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/loops&#34;&gt; Loops &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/variables&#34;&gt; Variables &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-			&lt;li&gt;&lt;a href = &#34;/lesson/template&#34;&gt; Template &lt;/a&gt; &lt;/li&gt;
-
+			&lt;div class = &#34;card z-depth-3&#34;&gt;
+				&lt;div class = &#34;card-block&#34;&gt;
+					&lt;h4 class = &#34;card-title&#34;&gt;Time&lt;/h4&gt;
+					&lt;p class=&#34;card-text&#34;&gt;
+						&lt;i&gt;Lesson created by Vincent Macri&lt;/i&gt;
+						&lt;p&gt;The universe was created on January 1st, 1970.&lt;/p&gt;
+						&lt;p&gt;This lesson will teach you how to keep track of time.&lt;/p&gt;
+					&lt;/p&gt;
+					&lt;a href=&#34;http://macwebdev.ca/lesson/time&#34; class=&#34;btn main-color&#34; style = &#34;margin-right:0; margin-left:auto;&#34;&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class = &#34;card z-depth-3&#34;&gt;
+				&lt;div class = &#34;card-block&#34;&gt;
+					&lt;h4 class = &#34;card-title&#34;&gt;Variables&lt;/h4&gt;
+					&lt;p class=&#34;card-text&#34;&gt;
+						&lt;i&gt;Lesson created by Vincent Macri&lt;/i&gt;
+						&lt;p&gt;Variables allow you to store values. They are one of the most important parts of programming, maybe even the most important.&lt;/p&gt;
+					&lt;/p&gt;
+					&lt;a href=&#34;http://macwebdev.ca/lesson/variables&#34; class=&#34;btn main-color&#34; style = &#34;margin-right:0; margin-left:auto;&#34;&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class = &#34;card z-depth-3&#34;&gt;
+				&lt;div class = &#34;card-block&#34;&gt;
+					&lt;h4 class = &#34;card-title&#34;&gt;Conditionals&lt;/h4&gt;
+					&lt;p class=&#34;card-text&#34;&gt;
+						&lt;p&gt;
+							&lt;i&gt;Lesson created by Richard Yi&lt;/i&gt;
+						&lt;/p&gt;
+						&lt;p&gt;
+							Conditional statements, or &#34;if statements&#34;, let you run a block of code only if a certain condition is true.
+						&lt;/p&gt;
+				&lt;/p&gt;
+					&lt;a href=&#34;http://macwebdev.ca/lesson/conditionals&#34; class=&#34;btn main-color&#34; style = &#34;margin-right:0; margin-left:auto;&#34;&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class = &#34;card z-depth-3&#34;&gt;
+				&lt;div class = &#34;card-block&#34;&gt;
+					&lt;h4 class = &#34;card-title&#34;&gt;Loops&lt;/h4&gt;
+					&lt;p class=&#34;card-text&#34;&gt;
+						&lt;p&gt;
+							&lt;i&gt;Lesson created by Abdul Arif&lt;/i&gt;
+						&lt;/p&gt;
+			            &lt;p&gt;There are two types of loops: counted loops and conditional loops.&lt;/p&gt;
+					&lt;/p&gt;
+					&lt;a href=&#34;http://macwebdev.ca/lesson/loops&#34; class=&#34;btn main-color&#34; style = &#34;margin-right:0; margin-left:auto;&#34;&gt;Read More&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
 		&lt;/ul&gt;
-	&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

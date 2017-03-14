@@ -54,7 +54,7 @@ header {
 
 main {
     padding: 16px;
-    padding-bottom: 125px;
+    padding-bottom: 145px;
 }
 
 footer {
@@ -63,7 +63,16 @@ footer {
 	position: absolute;
 	bottom: 0;
 }
+/*Card stuff*/
+div{
 
+}
+.card{
+    margin-left: -10px;
+}
+.card-title{
+  color: #E61B61;
+}
 /* No selection nor dragging */
 .noseldrag {
   -webkit-user-select: none;
